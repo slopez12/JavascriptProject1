@@ -19,11 +19,11 @@ building image?*/
 $('#building-form').on('submit', function(e) {
   var buildingname = $('#buildingname').val();
   $('#results').append('<li><a href="https://www.google.com/maps/place/' +
-  buildingname + '">' + '</a></li>');
+  buildingname + '">' + budilingname + '</a></li>');
   e.preventDefault();
 });
-$('#building-name').on('focus', function() {
-    console.log('The building-name element is found. No "e"');
+$('#buildingname').on('focus', function() {
+    console.log('The buildingname element is found. No "e"');
   });
 /* $('#google').on('click', function(event) {
   console.log('OMG they tired to go to Google!');
