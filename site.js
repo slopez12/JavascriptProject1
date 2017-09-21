@@ -19,11 +19,11 @@ var buildings = {
     "address": "3105 S Dearborn",
     "location": "https://www.google.com/maps/place/Stuart+Building,+Chicago,+IL+60616/@41.8395245,-87.6304336,17z/data=!3m1!5s0x880e2c7267cdc29f:0x16d7f78aa3cbe570!4m13!1m7!3m6!1s0x880e2c7208c2f807:0xf505ea1e9885a172!2s3105+S+Dearborn+St,+Chicago,+IL+60616!3b1!8m2!3d41.8395245!4d-87.6282449!3m4!1s0x880e2c7267d41d0d:0xa86f8aa74f6e9e8e!8m2!3d41.8387343!4d-87.627399"
   },
-  "Perlstein Hall":{
+  "Perlstein Hall": {
     "address": "10 W 33rd",
     "location": "https://www.google.com/maps/place/Perlstein+Hall,+10+W+33rd+St,+Chicago,+IL+60616/@41.835479,-87.6293416,17z/data=!3m1!4b1!4m5!3m4!1s0x880e2c0d35ac167b:0x2d05b964be01bbf8!8m2!3d41.835479!4d-87.6271529"
   },
-  "Siegal Hall":{
+  "Siegal Hall": {
     "address": "3301 S Dearborn",
     "location": "https://www.google.com/maps/place/3301+S+Dearborn+St,+Chicago,+IL+60616/@41.83368,-87.6306087,17z/data=!3m1!4b1!4m5!3m4!1s0x880e2c0d7d0c76d1:0x92096876dc3b2f3c!8m2!3d41.83368!4d-87.62842"
   },
