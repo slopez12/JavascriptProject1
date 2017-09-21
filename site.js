@@ -41,7 +41,7 @@ $('#buildingform').on('submit', function(e) {
   var buildingname = $('#buildingname').val();
   if(buildings[buildingname] !== undefined ) {
     $('#results').append('<li><a href="' + buildings[buildingname]["location"] + '">' +
-    buildingname + '</a><s/li>');
+    buildingname + '</a></li>');
   } else {
     $('#result').append('<li>' + buildingname + ' not found: it may not be in the system yet; try "Galvin library"');
   }
