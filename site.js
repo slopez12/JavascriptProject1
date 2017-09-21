@@ -50,13 +50,17 @@ var buildings = [
 building image?*/
 
 $('#building-form').on('submit', function(e) {
-  var buildingname = $('#buildingname').val();
-  $('#results').append('<li><a href="https://www.google.com/maps/place/' +
-  buildingname + '">' + budilingname + '</a></li>');
+  var building-name = $('#building-name').val();
+  if(buildings[building-name] !== undefined) {
+    $('#results').append('<li><a href="' + buildings[building-name]["location"] + '">' +
+    building-name + '</a></li>');
+  } else {
+    $('#result').append('<li>' + building-name + ' not found: it may not be in the system yet; try "Galvin library"');
+  }
   e.preventDefault();
 });
-$('#buildingname').on('focus', function() {
-    console.log('The buildingname element is found. No "e"');
+$('#building-name').on('focus', function() {
+    console.log('The building-name element is found. No "e"');
   });
 /* $('#google').on('click', function(event) {
   console.log('OMG they tired to go to Google!');
