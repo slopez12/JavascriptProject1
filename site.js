@@ -1,5 +1,5 @@
 var buildings = [
-  "Academic Buildings" {
+  "Academic Buildings":{
     "Galvin Libray": {
       "address": "35 W 33rd St, Chicago, IL",
       "location":"https://www.google.com/maps/place/Paul+V.+Galvin+Library/@41.833676,-87.628307,15z/data=!4m5!3m4!1s0x0:0xd02a6e76ebf8681b!8m2!3d41.833676!4d-87.628307"
@@ -11,58 +11,51 @@ var buildings = [
       },
       "Alumni Memorial": {
         "address": "3201 S Dearborn",
-        "location": ""
+        "location": "https://www.google.com/maps/place/Alumni+Memorial+Hall,+3201+S+Dearborn+St,+Chicago,+IL+60616/@41.8362074,-87.6295179,17z/data=!3m1!4b1!4m5!3m4!1s0x880e2c72b7ea734d:0x3a1373b16560a4c0!8m2!3d41.836184!4d-87.6273619"
       },
       "John T. Rettaliata Engineering Center": {
         "address": "10 W 32nd",
-        "location": ""
+        "location": "https://www.google.com/maps/place/10+W+32nd+St,+Chicago,+IL+60616/@41.8368138,-87.6294606,17z/data=!3m1!4b1!4m5!3m4!1s0x880e2c72b897eedd:0x18e5db013bdc1811!8m2!3d41.8368138!4d-87.6272719"
       },
       "Robert A. Pritzker Science Center": {
         "address": "3105 S Dearborn",
-        "location": ""
+        "location": "https://www.google.com/maps/place/Stuart+Building,+Chicago,+IL+60616/@41.8395245,-87.6304336,17z/data=!3m1!5s0x880e2c7267cdc29f:0x16d7f78aa3cbe570!4m13!1m7!3m6!1s0x880e2c7208c2f807:0xf505ea1e9885a172!2s3105+S+Dearborn+St,+Chicago,+IL+60616!3b1!8m2!3d41.8395245!4d-87.6282449!3m4!1s0x880e2c7267d41d0d:0xa86f8aa74f6e9e8e!8m2!3d41.8387343!4d-87.627399"
       },
       "Perlstein Hall":{
         "address": "10 W 33rd",
-        "location": ""
+        "location": "https://www.google.com/maps/place/Perlstein+Hall,+10+W+33rd+St,+Chicago,+IL+60616/@41.835479,-87.6293416,17z/data=!3m1!4b1!4m5!3m4!1s0x880e2c0d35ac167b:0x2d05b964be01bbf8!8m2!3d41.835479!4d-87.6271529"
       },
       "Siegal Hall":{
         "address": "3301 S Dearborn",
-        "location": ""
+        "location": "https://www.google.com/maps/place/3301+S+Dearborn+St,+Chicago,+IL+60616/@41.83368,-87.6306087,17z/data=!3m1!4b1!4m5!3m4!1s0x880e2c0d7d0c76d1:0x92096876dc3b2f3c!8m2!3d41.83368!4d-87.62842"
       },
       "Stuart Builidng": {
         "address": "10 W 31st",
-        "location": ""
+        "location": "https://www.google.com/maps/place/10+W+31st+St,+Chicago,+IL+60616/@41.838904,-87.6296597,17z/data=!3m1!4b1!4m5!3m4!1s0x880e2c7268e33089:0xfee93bfcd7f0488a!8m2!3d41.838904!4d-87.627471"
       },
       "Wishnick Hall": {
         "address": "3255 S Dearborn",
-        "location": ""
+        "location": "https://www.google.com/maps/place/3255+S+Dearborn+St,+Chicago,+IL+60616/@41.8350671,-87.6299163,17z/data=!3m1!4b1!4m5!3m4!1s0x880e2c0d4f8ed923:0x7e60019b0027f2ad!8m2!3d41.8350671!4d-87.6277276"
       }
   },
   "Athletic Building" {
     "Keating Hall": {
       "address": "3040 S Wabash",
-      "location": ""
+      "location": "https://www.google.com/maps/place/Keating+Sports+Center,+3040+S+Wabash+Ave,+Chicago,+IL+60616/@41.839,-87.6277565,17z/data=!3m1!4b1!4m5!3m4!1s0x880e2c73b0d9cd1d:0x76695de702277b9b!8m2!3d41.838997!4d-87.6255751"
     }
   }
 ]
 
-/* $('#building-form').append('<img src="' + building['avatar_url'] +'" />');
-building image?*/
-
-$('#building-form').on('submit', function(e) {
-  var building-name = $('#building-name').val();
-  if(buildings[building-name] !== undefined) {
-    $('#results').append('<li><a href="' + buildings[building-name]["location"] + '">' +
+$('#buildingform').on('submit', function(e) {
+  var buildingname = $('#buildingname').val();
+  if(buildings[buildingname] !== undefined) {
+    $('#results').append('<li><a href="' + buildings[buildingname]["location"] + '">' +
     building-name + '</a></li>');
   } else {
-    $('#result').append('<li>' + building-name + ' not found: it may not be in the system yet; try "Galvin library"');
+    $('#result').append('<li>' + buildingname + ' not found: it may not be in the system yet; try "Galvin library"');
   }
   e.preventDefault();
 });
-$('#building-name').on('focus', function() {
+$('#buildingname').on('focus', function() {
     console.log('The building-name element is found. No "e"');
   });
-/* $('#google').on('click', function(event) {
-  console.log('OMG they tired to go to Google!');
-  event.preventDefault();
-}); directing to google?*/
