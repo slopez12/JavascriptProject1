@@ -1,4 +1,4 @@
-var buildings = [
+var buildings = {
   "Galvin Libray": {
     "address": "35 W 33rd St",
     "location":"https://www.google.com/maps/place/Paul+V.+Galvin+Library/@41.833676,-87.628307,15z/data=!4m5!3m4!1s0x0:0xd02a6e76ebf8681b!8m2!3d41.833676!4d-87.628307"
@@ -35,9 +35,9 @@ var buildings = [
     "address": "3255 S Dearborn",
     "location": "https://www.google.com/maps/place/3255+S+Dearborn+St,+Chicago,+IL+60616/@41.8350671,-87.6299163,17z/data=!3m1!4b1!4m5!3m4!1s0x880e2c0d4f8ed923:0x7e60019b0027f2ad!8m2!3d41.8350671!4d-87.6277276"
   }
-]
+}
 
-$('#buildingform').on('submit', function(e) {
+$('#building-form').on('submit', function(e) {
   var buildingname = $('#buildingname').val();
   if(buildings[buildingname] !== undefined ) {
     $('#results').append('<li><a href="' + buildings[buildingname]["location"] + '">' +
